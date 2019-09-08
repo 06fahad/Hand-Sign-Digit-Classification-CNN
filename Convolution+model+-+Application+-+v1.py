@@ -556,14 +556,5 @@ _, _, parameters = model(X_train, Y_train, X_test, Y_test)
 # </tr> 
 # </table>
 
-# Congratulations! You have finised the assignment and built a model that recognizes SIGN language with almost 80% accuracy on the test set. If you wish, feel free to play around with this dataset further. You can actually improve its accuracy by spending more time tuning the hyperparameters, or using regularization (as this model clearly has a high variance). 
-# 
-# Once again, here's a thumbs up for your work! 
 
-# In[ ]:
-
-fname = "images/thumbs_up.jpg"
-image = np.array(ndimage.imread(fname, flatten=False))
-my_image = scipy.misc.imresize(image, size=(64,64))
-plt.imshow(my_image)
 
